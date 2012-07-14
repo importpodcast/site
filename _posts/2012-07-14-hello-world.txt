@@ -8,6 +8,10 @@ guest:
   name: kennethreitz
   twitter: http://twitter.com/kennethreitz
 links:
-  - url: http://google.com
-    title: google
+  - title: requests
+    url: http://docs.python-requests.org/en/latest/index.html
+  - title: httpbin
+    url: http://httpbin.org
+  - title: heroku
+    url: http://heroku.com
 ---
