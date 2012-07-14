@@ -1,0 +1,16 @@
+<div class="row post">
+  <div class="span10">
+    <p><span class="def">def</span> <a href="{{ post.url }}" class="function">{{ post.title }}</a>(play):</p>
+    <div class="indent">
+      <p>guest = <a href="{{ post.guest.twitter }}" class="string">"{{ post.guest.name }}"</a></p>
+      <p>topic = <span class="string">"{{ post.topic }}"</span></p>
+      <p>links = [</p>
+      <ul class="links unstyled">
+        {% for link in post.links %}
+        <li><a href="{{ link.url }}" class="string">"{{ link.title }}"</a>,</li>
+        {% endfor %}
+      </ul>
+      <p>]</p>
+    </div>
+  </div>
+</div>

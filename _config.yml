@@ -1,3 +1,5 @@
+markdown: maruku
+permalink: pretty
 pygments: true
 exclude:
   - README.md

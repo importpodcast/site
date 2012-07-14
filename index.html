@@ -14,4 +14,9 @@ layout: default
       <p>host = <a class="string" href="http://twitter.com/zachwill">"zachwill"</a></p>
     </div>
   </div>
+
+  {% for post in site.posts %}
+    {% include post.html %}
+  {% endfor %}
+
 </div>

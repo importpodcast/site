@@ -1,4 +1,5 @@
 @blue: #148ee3;
+@pink: #e314d7;
 @green: #11b928;
 @purple: #6714e3;
 
@@ -12,9 +13,13 @@ a {
     &:hover {
         text-decoration: none;
     }
-    &.string:hover{
+    &.string:hover {
         border-bottom: 3px dashed @green;
         color: @green;
+    }
+    &.function:hover {
+        border-bottom: 3px dashed @blue;
+        color: @blue;
     }
 }
 
@@ -22,6 +27,9 @@ a {
     color: #ccc;
 }
 
+.def {
+    color: @pink;
+}
 
 .docstring, .string {
     color: @green;
@@ -29,6 +37,10 @@ a {
 
 .docstring .content {
     margin-top: -.5em;
+}
+
+.function {
+    color: @blue;
 }
 
 .import {
@@ -39,6 +51,18 @@ a {
     }
 }
 
+.indent {
+    padding-left: 1.5em;
+}
+
+.links {
+    padding-left: 1.5em;
+}
+
 .play {
     color: #d714e3;
+}
+
+.post {
+    padding: 75px 0 0;
 }
