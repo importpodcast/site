@@ -4,7 +4,7 @@
 @purple: #6714e3;
 
 body {
-    font: 60px/1em "Londrina Solid", sans-serif;
+    font: 48px/1em "Londrina Solid", sans-serif;
     padding: 25px 0;
 }
 
@@ -73,4 +73,38 @@ a {
 
 .post {
     padding: 75px 0 0;
+}
+
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    body {
+        font-size: 24px;
+        padding: 20px 10px;
+    }
+    .post {
+        padding-top: 30px;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) and (min-width: 481px){
+    body {
+        font-size: 32px;
+        padding: 25px 10px;
+    }
+    .post {
+        padding-top: 40px;
+    }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+    body {
+        font-size: 60px;
+    }
 }
