@@ -5,6 +5,6 @@ exclude:
   - README.md
 
 author      : Zach Williams, @zachwill
-analytics   : UA-XXXXX-X
+analytics   : UA-11117730-17
 description : "A Python podcast worth listening to. Hosted by @zachwill."
 title       : "importpodcast | A requirements.txt for your ears"
