@@ -1,5 +1,5 @@
-podcast
-=======
+import screencast
+=================
 
-An easy way to check out the [importpodcast.com
-site](http://importpodcast.com).
+A Django site built to show screencasts on topics such as Python, vim,
+git, etc.

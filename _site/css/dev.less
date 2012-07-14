@@ -1,0 +1,44 @@
+@blue: #148ee3;
+@green: #11b928;
+@purple: #6714e3;
+
+body {
+    font: 60px/1em "Londrina Solid", sans-serif;
+    padding: 25px 0;
+}
+
+a {
+    color: inherit;
+    &:hover {
+        text-decoration: none;
+    }
+    &.string:hover{
+        border-bottom: 3px dashed @green;
+        color: @green;
+    }
+}
+
+.comment {
+    color: #ccc;
+}
+
+
+.docstring, .string {
+    color: @green;
+}
+
+.docstring .content {
+    margin-top: -.5em;
+}
+
+.import {
+    color: @purple;
+    em {
+        color: @blue;
+        font-style: normal;
+    }
+}
+
+.play {
+    color: #d714e3;
+}
