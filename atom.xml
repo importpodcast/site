@@ -21,7 +21,10 @@ layout: nil
    <link href="http://importpodcast.com{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
    <id>http://importpodcast.com{{ post.id }}</id>
-   <content type="html">{{ post.topic | xml_escape }}</content>
+   <content type="html">
+     <a href="{{ post.audio }}">Play</a>
+     {{ post.topic | xml_escape }}
+   </content>
  </entry>
  {% endfor %}
 
