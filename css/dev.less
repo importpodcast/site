@@ -1,4 +1,5 @@
 @blue: #148ee3;
+@gray: #ccc;
 @pink: #e314d7;
 @green: #11b928;
 @purple: #6714e3;
@@ -17,6 +18,10 @@ a {
         border-bottom: 3px dashed @purple;
         color: @purple;
     }
+    &.comment:hover {
+        border-bottom: 3px dashed @gray;
+        color: @gray;
+    }
     &.def:hover {
         border-bottom: 3px dashed @pink;
         color: @pink;
@@ -32,7 +37,7 @@ a {
 }
 
 .comment {
-    color: #ccc;
+    color: @gray;
 }
 
 .def {

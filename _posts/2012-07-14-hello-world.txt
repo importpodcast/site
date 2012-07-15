@@ -1,8 +1,9 @@
 ---
 layout: post
+permalink: /hello-world/
 title: hello_world
 
-audio: http://httpbin.org
+audio: /#
 topic: APIs for humans
 guest:
   name: kennethreitz
