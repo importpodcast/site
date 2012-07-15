@@ -1,0 +1,28 @@
+---
+layout: nil
+---
+
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>import podcast</title>
+ <link href="http://importpodcast.com/atom.xml" rel="self"/>
+ <link href="http://importpodcast.com/"/>
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <id>http://importpodcast.com/</id>
+ <author>
+   <name>Zach Williams</name>
+   <email>hey@zachwill.com</email>
+ </author>
+
+ {% for post in site.posts %}
+ <entry>
+   <title>{{ post.title }}</title>
+   <link href="http://importpodcast.com{{ post.url }}"/>
+   <updated>{{ post.date | date_to_xmlschema }}</updated>
+   <id>http://importpodcast.com{{ post.id }}</id>
+   <content type="html">{{ post.topic | xml_escape }}</content>
+ </entry>
+ {% endfor %}
+
+</feed>
