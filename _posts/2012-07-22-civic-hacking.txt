@@ -1,0 +1,16 @@
+---
+layout: post
+permalink: /civic-hacking/
+title: civic_hacking
+
+audio: /audio.mp3
+topic: DIY civic hacking
+guest:
+  name: mjumbewu
+  twitter: http://twitter.com/mjumbewu
+links:
+  - title: councilmatic
+    url: https://github.com/codeforamerica/councilmatic
+  - title: streetscore
+    url: https://github.com/openplans/streetscore
+---
